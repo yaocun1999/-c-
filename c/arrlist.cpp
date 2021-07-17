@@ -5,12 +5,14 @@ struct arrlist
     int data[5];
     int length;
 };
+
 void initlist(arrlist &l)
 {
     for (int i = 0; i < 5; i++)
     {
-        //(*(l)).data[i] = 1;
+        // (*(l)).data[i] = 1;
         (&l)->data[i] = 2;
+        cout << "hyc";
     }
     (&l)->length = 0;
 }
