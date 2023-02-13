@@ -21,7 +21,8 @@ bool pushstack(stack &b, int elems)
 }
 
 int popstack(stack &b)
-{
+{   
+    int a= 0;
     int x;
     if (b.top == -1)
         return -1;
